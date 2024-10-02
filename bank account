@@ -1,0 +1,38 @@
+class BankAccount:
+    def _init_(self,customer_name,account_number,date_of_opening):
+        self.customer_name=customer_name
+        self.account_number=account_number
+        self.date_of_opening=date_of_opening
+        self.balance=0
+        
+    def deposit(self,amount):
+        self.balance+=amount
+        print(f"{amount} deposited successfully")
+        
+    def withdraw(self,amount):
+        if(self.balance>=amount):
+            self.balance-=amount
+            print("withdraw successfull")
+            print(f"your account balance is : {self.balance}")
+        else:
+            print("insufficient balance")
+    def check_balance(self,balance):
+        print(f"you account balance is : {self.balance}")
+        
+    def print_customer_details(self):
+        print(f"""customer name:{self.customer_name}
+account number:{self.account_number}
+account opened date:{self.date_of_opening}
+customer name:{self.customer_name}
+account balance:{self.balance}""")
+
+
+customer_name=input("enter your name:")
+account_number=int(input("enter your account number:"))
+date_of_opening=input("enter account opening date :")
+acc1=BankAccount(customer_name,account_number,date_of_opening)
+amount=int(input("enter amount to deposit:"))
+acc1.deposit(amount)
+amount=int(input("enter amount to withdraw:"))
+acc1.withdraw(amount)
+acc1.print_customer_details()
