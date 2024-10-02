@@ -1,0 +1,172 @@
+class Sample:
+    x=10
+s1=Sample()
+s2=Sample()
+print(s1.x)
+print(s2.x)
+
+class Sample:
+    x=10
+
+    def fun(self):
+        print("hello")
+s1=Sample()
+
+s1.fun()
+
+
+
+class Sample:
+    x=10
+
+    def fun(self):
+        x="hi"
+        print("value of x is",x)
+s1=Sample()
+s1.fun()
+    
+
+
+class Sample:
+    x=10
+
+    def fun(self):
+        x="hi"
+        print("value of x is ",self.x)
+s1=Sample()
+s1.fun()
+
+class Sample:
+    x=10
+
+    def fun(self):
+        x="hi"
+        print("value of x is ",x)
+s1=Sample()
+s1.fun
+s1.x="python"
+print(s1.x)
+
+class Sample:
+    x=10
+
+    def fun(self):
+        x="hi"
+        print("value of x is ",x)
+s2=Sample()
+s2.fun
+print(s2.x)
+
+class Student:
+    def details(self,name,age): #self is a reference that object
+        self.n=name
+        self.a=age
+s1=Student()
+s1.details("jhon",20)
+print(s1.n)
+print(s1.a)
+def display(self):
+    print("name is ",self.n)
+    print("age is ",self.a)
+            
+class Watch:
+    
+    def __init__(self,Brand,Color): #self is a reference that object
+        
+        self.Brand_name=Brand
+        self.Color=Color
+        self.time="12:00 pm"
+        
+    def display_time(self):
+        print(f"time:{self.time}")
+        
+watch1=Watch("rolex","silver")
+watch2=Watch("titan","black")
+watch1.display_time()
+print(watch1.color)
+print(watch2.Brand_name)
+        
+
+            
+
+class Watch:
+
+    def __init__(self,brand,color,price):
+
+        self.brand_name=brand
+        self.color=color
+        self.price=price
+        self.time="12:00 pm"
+
+    def show_details(self):
+
+        print(f"brand:{self.brand_name}")
+        print(f"color:{self.color}")
+        print(f"price:{self.price}")
+            
+
+watch1=Watch("rolex","silver",1100)
+watch1.show_details()
+
+
+
+
+class Watch:
+
+    def __init__(self,brand,color,price,new_time):
+
+        self.brand_name=brand
+        self.color=color
+        self.price=price
+        self.new_time="1:00 pm"
+        self.time="12:00 pm"
+
+    def  show_details(self):
+        print(f"brand:{self.brand_name}")
+        print(f"color:{self.color}")
+        print(f"time:{self.time}")
+        print(f"price:{self.price}")
+
+watch1=Watch("rolex","silver",1100)
+watch2=Watch("titan","black",1200)
+watch1.show_details()
+
+def  update_time(self,new_time):
+
+    self.time=new_time
+    print(f"updated time:{self,time}")
+
+def is_effordable(self,budget):
+
+    if self.price<=budget:
+        print("it's affordable")
+    else:
+        print("it's not effordable")
+     
+
+class Animal:
+
+    def __init__(self,name):
+        self.name=name
+
+class Dog(Animal):
+
+    def speak(self):
+        print("bwoooo")
+        return
+            
+class Cat(Animal):
+
+    def speak(self):
+        print("meowww")
+        return
+    
+animal1=Animal("sample")
+animal2=Dog("jimbrootan")
+animal3=Cat("nakkii")
+print(animal1.name)
+print(animal2.name,animal2.speak())
+print(animal3.name,animal3.speak())
+
+
+
